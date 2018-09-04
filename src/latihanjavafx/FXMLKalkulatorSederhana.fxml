@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerFXMLKalkulator">
+   <children>
+      <Label layoutX="44.0" layoutY="115.0" style="-fx-background-color: white;" text="Bilangan 1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="148.0" style="-fx-background-color: white;" text="Bilangan 2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="54.0" style="-fx-background-color: white;" text="Kalkulator Sederhana">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bil1" layoutX="128.0" layoutY="111.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bil2" layoutX="128.0" layoutY="144.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="tambah" layoutX="133.0" layoutY="186.0" onAction="#pertambahan" ripplerFill="#2f2f2c" style="-fx-background-color: yellow;" text="+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="kurang" layoutX="182.0" layoutY="186.0" onAction="#pengurangan" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: yellow;" text="-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="kali" layoutX="237.0" layoutY="186.0" onAction="#perkalian" style="-fx-background-color: yellow;" text="x">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="bagi" layoutX="285.0" layoutY="186.0" onAction="#pembagian" style="-fx-background-color: yellow;" text="/">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="hasil" layoutX="137.0" layoutY="228.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
